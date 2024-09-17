@@ -1,0 +1,143 @@
+.homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.homepage .item{
+    margin-left: 10%;
+    margin-right: 5%;
+    transition: 0.5s ;
+}
+
+.homepage .item-nabvar:hover + .item{
+    margin-left: 20%;
+    margin-right: 5%;
+    transition: 0.5s ;
+}
+
+.homepage .h1{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 86px; 
+    color: white;
+    line-height: 15px;
+    padding-top: 50px;
+}
+
+.homepage .h2{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 60px; 
+    color: white;
+    line-height: 15px;
+}
+
+.homepage .h3{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 30px; 
+    color: #FFB109;
+    line-height: 15px;
+}
+
+.homepage .imageContainer{
+    align-content: center;
+    text-align: center;
+}
+
+.homepage .imageProfileContent{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.homepage .dividerYellow{
+    margin: 50px 0px 50px 0px;
+    border: 1px solid #FFB109;
+}
+
+.homepage .sectionInfo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.homepage .next-section{
+    align-content: center;
+    text-align: center;
+}
+
+.homepage .next-section-btn{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: none;
+}
+
+@keyframes changewidth {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(10px);
+    }
+}
+
+.homepage .icon-down{
+    font-size: 50px;
+    animation-duration: 0.7s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.homepage .icon-down:hover{
+    transition: 0.5s;
+    transform: translateY(15px);
+}
+
+.homepage .description{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 20px; 
+    color: lightgray;
+    text-justify: auto;
+    line-height: 25px;
+}
+
+.homepage .subtitle{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 30px; 
+    color: white;
+    line-height: 15px;
+}
+
+.homepage .NameColor{
+    color: #FFB109;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 86px; 
+}
+
+.homepage .contactBtn{
+    margin: 10px;
+    background-color: #FFB109;
+    border:none;
+    width: 550px;
+    height: 50px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-weight: 500;
+    font-size: 20px; 
+    border-radius: 22px;
+}
+
+.homepage .contactBtn:hover{
+    background-color: #FBC34A;
+    transition: 1s;
+}
+

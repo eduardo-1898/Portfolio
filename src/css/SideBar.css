@@ -1,0 +1,126 @@
+.containerSidebar{
+    background-color: #FFB109;
+    display: flex;
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 30px;
+    flex-direction: column;
+    transition: 0.5s ;
+}
+
+.containerSidebar:hover{
+    
+    background-color: white;
+    display: flex;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 100px;
+    flex-direction: column;
+    transition: 0.5s ease;
+    
+}
+
+.loader {
+    width: 84px;
+    height: 84px;
+}
+.loader:before , .loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width:64px;
+    height: 64px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50% , -100%)  scale(0);
+    animation: push 2s infinite linear;
+}
+.loader:after {
+    animation-delay: 1s;
+}
+@keyframes push {
+    0% , 50%{ transform: translate(-50% , 0%)  scale(1) }
+    100% { transform: translate(-50%, -100%) scale(0) }
+}
+
+
+.containerSidebar .links{
+    color: white;
+    visibility: hidden;
+}
+
+.containerSidebar:hover .links{ 
+    color: #FFB109;
+    transition-delay: 0.5s !important;
+    visibility: visible;
+}
+
+.containerSidebar .imageProfile{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+.containerSidebar:hover .imageProfile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+
+.profileContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.imageProfile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0%;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+li{
+    margin-left: 0;
+    font-size: 32px;
+    padding: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+}
+
+a:hover{
+    color: #FFB109;
+    transition: 0.5s;
+}
+
+li:hover{
+    color: #FFB109;
+    transform: translateY(-10px);
+    transition: 0.5s;
+
+}
